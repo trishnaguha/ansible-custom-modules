@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+    - name: Test the custom module
+      custommodule:
+      register: output
+
+    - debug: var=output
+
